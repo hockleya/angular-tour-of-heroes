@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<!-- The below directive is available because AppComponent relies on AppModule to import AppRoutingModule which exported RouterModule. yes, that is long. -->
+<router-outlet></router-outlet> <!-- Tells the router where to display routed views. -->
+<!--<app-heroes></app-heroes>-->
+<app-messages></app-messages>
